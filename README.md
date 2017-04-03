@@ -20,6 +20,23 @@ Open angular-src/angular-cli.json and change the `"outDir": "../dist"` in apps o
 
 When running `ng build`, It will automatically save and make a public folder in the main folder.
 
+## Server Side
 
+In my app, I am using `MongoDB` as a database.
 
+To set up MongoDB database. Go to `https://mlab.com`.
 
+Create an account or if you already have an account just login.
+
+In `https://mlab.com/home` page inline with `MongoDB Deployments`. Create an account.
+
+Below Plan, select `Single-node`. Then below the Standard Line, select `Sandbox`.
+
+Then set `Database Name` below.
+
+Click `Users` then add database user which will have your username and pass.
+
+Then paste this in your database.js and change database set up which will look like this `database: mongodb://<dbuser>:<dbpassword>@ds149820.mlab.com:49820/meanauth`
+
+`<dbuser>` = your user name.
+`<dbpassword>` = your password
